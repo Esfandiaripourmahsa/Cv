@@ -66,11 +66,15 @@ body{
 .under-green img{
     width: 100%;
     border-radius: 50%;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
 }
 .under-green img:hover {
     transform: scale(1.1);
     box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.8);
+}
+.under-green img:active {
+    box-shadow: none;
+    border: 5px solid darkgoldenrod;
 }
 .name{
     margin-left: 10%;
