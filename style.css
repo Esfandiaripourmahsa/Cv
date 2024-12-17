@@ -14,4 +14,61 @@ body{
     display:flex;
     justify-content: flex-start;
     align-items: center;
+    flex-direction: column;
+}
+.container{
+    max-width: 1200px;
+    width: 100%;
+    height: fit-content;
+    box-sizing: 0px 0px 30px  #00000026;
+}
+.name{
+    margin-left: 10%;
+    margin-top: -4rem;
+}
+.name h1{
+    font-size: 60px;
+    font-weight: 800;
+    color: black;
+}
+.name p{
+    font-size: 35px;
+    color: black;
+
+}
+.icon{
+    display: flex;
+    gap: 35px;
+    margin-top: 1.5rem;
+
+}
+
+
+
+
+
+.detail h4
+{
+    font-size: 14px;
+    margin-bottom: 8px;
+
+}
+
+
+
+.button-right{
+    width: 65%;
+    height: 105%;
+    position: relative;
+    background: rgba(64,255,223,0.78);
+    margin-top: -5.3%;
+    border-radius: 100px 0 0 0;
+    padding: 4rem 15% 0rem 5%;
+
+}
+.right-heading{
+background: rgba(49,54,55,0.68);
+}
+.right-heading h3{
+    color: white;
 }
