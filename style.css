@@ -298,3 +298,57 @@ tr:hover td {
     background-color: rgba(16,46,38,0.95);
 }
 
+.footer {
+    width: 100%;
+    background-color: rgba(15,76,69,0.95);
+    color: white;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.1);
+}
+.footer-left, .footer-center, .footer-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-left p {
+    margin: 15px;
+    font-size: 10px;
+}
+
+.footer-center p {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.footer-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.back-to-top {
+    background-color: #fff;
+    color: #4CAF50;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.back-to-top:hover {
+    background-color: #ddd;
+}
+
+
+
+
