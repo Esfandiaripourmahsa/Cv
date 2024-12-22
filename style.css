@@ -359,6 +359,85 @@ tr:hover td {
     transform: scale(1.1);
 }
 
+@media (max-width: 750px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .top {
+        flex-direction: column;
+        padding-left: 0;
+        align-items: center;
+        text-align: center;
+    }
+    .name {
+        margin-top: 1rem;
+        margin-left: 0;
+    }
+    .button {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+    .button-left, .button-right {
+        width: 100%;
+        margin: 0;
+        padding: 1rem;
+    }
+    .button-right {
+        margin-top: 0;
+        border-radius: 0;
+    }
+    .name h1 {
+        font-size: 35px;
+        line-height: 45px;
+    }
+    .name p {
+        font-size: 20px;
+    }
+    .icon {
+        gap: 15px;
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 550px) {
+    .green-bar {
+        width: 5rem;
+        height: 12rem;
+    }
+    .user-circle {
+        width: 8rem;
+    }
+    .name h1 {
+        font-size: 28px;
+        line-height: 35px;
+    }
+    .name p {
+        font-size: 18px;
+    }
+    .button {
+        flex-direction: column;
+    }
+    .button-left, .button-right {
+        width: 100%;
+        padding: 1rem;
+        text-align: center;
+    }
+    .button-right {
+        border-radius: 0;
+        padding: 2rem 1rem;
+    }
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem 0;
+    }
+    .footer-left, .footer-center, .footer-right {
+        margin: 0.5rem 0;
+    }
+}
 
 
 
