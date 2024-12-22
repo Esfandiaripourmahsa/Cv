@@ -237,11 +237,7 @@ background: rgba(15,76,69,0.95);
 
 
 }
-.uni{
-    color: rgba(49,54,55,0.95);
-    font-size: 14px;
 
-}
 .right-detail h4{
     font-size: 20px;
 }
@@ -255,31 +251,44 @@ background: rgba(15,76,69,0.95);
     font-size: 14px;
     line-height: 1.5;
 }
+
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 10px;
     border-radius: 10px;
     overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
 }
 
 th, td {
-    padding: 10px;
+    padding: 12px 20px;
     text-align: left;
     border-bottom: 1px solid #ddd;
-}
-
-tbody tr:nth-child(even) {
-    background-color: #f2f2f2;
-}
-
-tbody tr:nth-child(odd) {
-    background-color: #ffffff;
 }
 
 th {
     background-color: #4CAF50;
     color: white;
-    font-weight: bold;
+}
+
+td {
+    background-color: #f9f9f9;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+tr:hover {
+    background-color: rgba(16,46,38,0.95);
+    color: white;
+}
+tr:hover td {
+    background-color: rgba(16,46,38,0.95);
 }
 
