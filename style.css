@@ -29,6 +29,7 @@ body{
     height: fit-content;
     width: 100%;
     padding-left: 10%;
+    padding-top: 50px;
 }
 .user{
     width: fit-content;
@@ -342,6 +343,11 @@ tr:hover td {
     align-items: center;
     margin: 15px;
 }
+.footer2{
+    margin: 15px;
+    font-size: 15px;
+
+}
 
 .back-to-top {
     background-color: #fff;
@@ -366,10 +372,16 @@ tr:hover td {
     }
     .top {
         flex-direction: column;
-        padding-left: 0;
         align-items: center;
         text-align: center;
+
     }
+    .user-circle {
+        position: relative; /* Verander naar relative voor dynamische plaatsing */
+        margin-top: 2rem;   /* Voeg wat extra ruimte toe boven de foto */
+        top: auto;          /* Negeer de absolute positionering */
+    }
+
     .name {
         margin-top: 1rem;
         margin-left: 0;
@@ -399,7 +411,18 @@ tr:hover td {
     .icon {
         gap: 15px;
         margin-top: 1rem;
+
     }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+
 }
 
 @media (max-width: 550px) {
@@ -407,37 +430,418 @@ tr:hover td {
         width: 5rem;
         height: 12rem;
     }
+
     .user-circle {
         width: 8rem;
     }
+
     .name h1 {
         font-size: 28px;
         line-height: 35px;
     }
+
     .name p {
         font-size: 18px;
     }
+
     .button {
         flex-direction: column;
     }
+
     .button-left, .button-right {
         width: 100%;
         padding: 1rem;
         text-align: center;
     }
+
     .button-right {
         border-radius: 0;
         padding: 2rem 1rem;
     }
+
     .footer {
         flex-direction: column;
         text-align: center;
         padding: 1rem 0;
     }
+
     .footer-left, .footer-center, .footer-right {
         margin: 0.5rem 0;
     }
 }
+header {
+    width: 100%;
+    background-color: rgba(15,76,69,0.95);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+
+
+
+
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 15px 0;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: rgba(64,255,223,0.95);
+    font-weight: bold;
+}
+.home-photo{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+
+
+
+}
+.user-circle2{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0px 8px 15px #0f4c45;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.user-circle2:hover{
+    box-shadow: 0 10px 10px 10px rgba(158,165,166,0.95);
+
+}
+.user-circle2 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.intro{
+    width: 100%;
+    max-width: 1200px;
+    padding: 40px 30px ;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.intro-text {
+    text-align: center;
+    flex: 2;
+
+
+}
+.intro-text h1 {
+    font-size: 48px;
+    font-weight: 800;
+    color: rgba(15,76,69,0.95);
+}
+
+.intro-text p {
+    font-size: 22px;
+    color: rgba(49,54,55,0.95);
+    line-height: 1.5;
+    margin: 20px 0;
+}
+
+
+.intro-text h2 {
+    font-size: 28px;
+    color: rgba(15,76,69,0.95);
+    margin-bottom: 10px;
+}
+
+.intro-text ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.intro-text ul li {
+    font-size: 17px;
+    color: rgba(49,54,55,0.95);
+
+    margin: 10px 0;
+}
+
+.intro-text ul li a {
+    text-decoration: none;
+    color: rgba(64, 255, 223, 0.95);
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.intro-text ul li a:hover {
+    color: rgba(15, 76, 69, 0.95);
+    font-weight: bold;
+}
+
+.footer-center p {
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0 20px;
+
+}
+.logBook {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logBook h1,
+.logBook h2,
+.logBook h3 {
+    color: rgba(15, 76, 69, 0.95);
+    text-align: center;
+}
+
+.logBook h1 {
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.logBook h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.logBook h3 {
+    font-size: 26px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+
+.logBook table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    font-size: 16px;
+}
+
+.logBook th,
+.logBook td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.logBook th {
+    background-color: rgba(15, 76, 69, 0.95);
+    color: white;
+    font-weight: 600;
+}
+
+.logBook td {
+    background-color: #f9f9f9;
+}
+
+.logBook caption {
+    font-style: italic;
+    font-size: 14px;
+    margin-top: 10px;
+    color: rgba(49, 54, 55, 0.7);
+}
+.develop{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.develop h1{
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    color: #0f4c45;
+    margin-top: 20px;
+}
+.develop h2{
+    font-size: 32px;
+    font-weight: 600;
+    margin-top: 30px;
+    color: #0f4c45;
+
+}
+.develop h3 {
+    font-size: 26px;
+    font-weight: 400;
+    margin-top: 20px;
+    color: white;
+    border-radius: 30px;
+    background: #0f4c45;
+    padding: 10px 20px ;
+    box-shadow: 10px 5px 25px -10px #00000026;
+    width: 100%;
+}
+.develop h3:hover {
+    font-weight: 600;
+    box-shadow: 10px 20px 25px -10px #333 ;
+
+}
+
+.develop p{
+    font-size: 16px;
+    line-height: 1.6;
+    margin:5px 20px;
+    color: #333;
+
+}
+.develop ul,
+.develop ol {
+    font-size: 16px;
+    margin-left: 20px;
+    color: #333;
+}
+.develop ul li
+.develop ol li{
+    margin-top: 10px;
+
+}
+.develop h4{
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 30px;
+    color: #0f4c45;
+}
+
+.project {
+    background-color: white;
+    margin-bottom: 40px;
+    padding: 80px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.project-title {
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: #0f4c45;
+}
+.title{
+    font-size: 40px;
+    margin: 20px 50px;
+    text-align: center;
+    color: rgba(64,255,223,0.95);
+    text-shadow: #0f4c45 0px 5px 0px ;
+
+
+}
+.project-image iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 8px;
+}
+.project-cap {
+    margin-top: 20px;
+}
+.project-cap h4{
+    font-size: 20px;
+    margin: 10px;
+    display: inline-flex;
+    border: 2px solid #0f4c45;
+    border-radius: 50px;
+    padding: 10px ;
+    background: #0f4c45;
+    color: white;
+
+}
+.project-cap i{
+    padding: 5px;
+}
+.project-cap h4:hover{
+    box-shadow: 10px 20px 25px -10px #00000026;
+    border: 4px solid #0f4c45;
+}
+.project-cap p {
+    font-size: 1.1em;
+    color: #7f8c8d;
+    line-height: 1.6;
+}
+.project-cap p:last-child {
+    margin-bottom: 0;
+}
+.project-plan img {
+    width: 50%;
+    height: auto;
+}
+.project-plan img:hover{
+    width: 100%;
+    height: auto;
+
+}
+.reflection-container {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.reflection-container h1{
+    text-align: center;
+    color: #0f4c45;
+    padding-top: 0;
+    padding-bottom: 30px;
+}
+.reflection h2 {
+    color: #0f4c45;
+    border-bottom: 2px solid #0f4c45;
+    padding: 20px 5px;
+    margin-bottom: 15px;
+}
+.reflection h2:hover{
+    font-weight: 600;
+    box-shadow: 10px 20px 40px -20px #4CAF50;
+}
+.reflection p {
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+.reflection ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.reflection ul li {
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
 
 
 
